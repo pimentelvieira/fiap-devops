@@ -16,7 +16,6 @@ public class LivroController {
     public ResponseEntity<List<Livro>> getLivros() {
     	List<Livro> result = new ArrayList<>();
     	result.add(new Livro(1, "George Martin", "Game Of Thrones"));
-    	result.add(new Livro(2, "George Martin", "Game Of Thrones"));
         return ResponseEntity.ok().body(result);
     }
 }
